@@ -1,0 +1,33 @@
+<html>
+    <head>
+        <title>
+
+        </title>
+    </head>
+    <body>
+        <div style="background-color: blue;text-align: center;padding-bottom: 10px;">
+            <h1 style="color: white;">Your Name</h1>
+            <h2 style="color: white;">Best introduction about yourself.</h2>
+        </div>
+        
+        <h3 style="color: blue;">Skills</h3>
+        <input type="text" placeholder="Add your skills" style="width: 600px;background-color: rgb(222, 219, 219);height: 35px;">
+
+        <h3 style="color: blue;">Projects</h3>
+        <div style="border: 1px solid black;">
+            <h4>Project Name</h4>
+            <h5>Project description goes here.</h5>
+        </div>
+        
+        <div style="text-align: center;">
+            <form>
+                <h2 style="color: blue;font-family: Arial;"><b>Contact</b></h2>
+                <p><input type="text" style="padding: 5 100 5 0;" placeholder="Your Name"/></p>
+                <p><input type="email" placeholder="Your Email" style="padding: 5 100 5 0;"/></p>
+                <p><textarea rows="5" placeholder="Your Message" style="height: 60px;padding: 5 100 5 0;"></textarea></p>
+                <p><input type="submit" value="Send Message" style="background-color:blue;color: white;padding: 5 87 5 87;"/></p>
+            </form>
+        </div>
+    
+    </body>
+</html>

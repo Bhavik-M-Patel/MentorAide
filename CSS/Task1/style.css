@@ -10,18 +10,15 @@ header {
 	opacity: 0;
 	color: black;
 }
-
 @keyframes fadein {
 	100% {
 		opacity: 1;
 	}
 }
-
 header h2 {
 	font-family: "Quicksand", sans-serif;
 	color: white;
 }
-
 header nav {
 	display: flex;
 	margin-right: 40px;
@@ -32,18 +29,15 @@ header nav a{
     list-style-type: none;
 	text-decoration: none;
 }
-
 @media (max-width: 800px) {
 	header {
 		padding: 20px 50px;
 		flex-direction: column;
 	}
-
 	header h2 {
 		margin-bottom: 15px;
 	}
 }
-
 
 /*Hero Styles*/
 
@@ -54,7 +48,6 @@ header nav a{
 	min-height: 100vh;
 	color: #fff;
 }
-
 .hero .background-image {
 	position: absolute;
 	top: 0;
@@ -65,17 +58,14 @@ header nav a{
 	z-index: -1;
 	background-color: #80a3db;
 }
-
 .hero h1 {
 	font: bold 60px "Open Sans", sans-serif;
 	margin-bottom: 15px;
 }
-
 .hero h3 {
 	font: normal 28px "Open Sans", sans-serif;
 	margin-bottom: 40px;
 }
-
 .hero a.btn {
 	padding: 20px 46px;
 	color: white;
@@ -87,33 +77,27 @@ header nav a{
 	opacity: 1;
 	text-decoration: none;
 }
-
 .hero-content-area {
 	opacity: 0;
 	padding-top: 200px;
 	animation: 1s slidefade 1s forwards;
 }
-
 @keyframes slidefade {
 	100% {
 		opacity: 1;
 		margin: 0;
 	}
 }
-
 @media (max-width: 800px) {
 	.hero {
 		min-height: 600px;
 	}
-
 	.hero h1 {
 		font-size: 48px;
 	}
-
 	.hero h3 {
 		font-size: 24px;
 	}
-
 	.hero a.btn {
 		padding: 15px 40px;
 	}
@@ -128,7 +112,7 @@ header nav a{
 	text-align: center;
 	padding: 0 200;
 	font: 32px "Open Sans",sans-serif;
-	margin: 0 0 30px;
+	margin: 50px 0 30px;
 	color: #555;
 }
 .destinations p{
@@ -149,50 +133,44 @@ header nav a{
 	background-size: cover;
 	background-position: center;
 }
-
 .destinations .grid li.small {
 	flex-basis: 30%;
 	padding: 0px;
-	height: 400px;
-	width: 400px;
+	height: 420px;
+	width: 420px;
 	float: left;
 	padding: 10px;
 }
-
 .destinations .grid li.small1 {
 	flex-basis: 30%;
 	padding: 0px;
-	height: 400px;
-	width: 400px;
+	height: 420px;
+	width: 420px;
 	float: right;
 	padding: 10px;
 }
-
 .destinations .grid li.large {
 	flex-basis: 70%;
 	float: right;
 	padding: 0px;
-	height: 400px;
-	width: 920px;
+	height: 420px;
+	width: 1000px;
 	padding: 10px;
 }
-
 .destinations .grid li.large1 {
 	flex-basis: 70%;
 	float: left;
 	padding: 0px;
-	height: 400px;
-	width: 920px;
+	height: 420px;
+	width: 1000px;
 	padding: 10px;
 }
-
 @media (max-width: 1100px) {
 	.destinations .grid li.small,
 	.destinations .grid li.large {
 		flex-basis: 50%;
 	}
 }
-
 @media (max-width: 800px) {
 	.destinations .grid li.small,
 	.destinations .grid li.large {
@@ -203,13 +181,14 @@ header nav a{
 /*Packages Section*/
 
 .packages{
-	margin: 950px 0px 0px 0px;
+	margin: 1000px 0px 0px 0px;
 	padding-bottom: 650px;
-	background-color: #f5f5f5;
-	
+	background-color: #f5f5f5;	
+	padding-top: 30px;
 }
 .packages .titles1{
 	text-align: center;
+	margin-top: 50px;
 	padding: 50 50 10 50;
 	font: 32px "Open Sans";
 	color: black;
@@ -234,7 +213,6 @@ header nav a{
 	font: 16px "Open Sans";
 	margin: 0px 30px;
 }
-
 .packages .grid li.left {
 	display: block;
 	padding: 50px;
@@ -242,7 +220,6 @@ header nav a{
 	float: left;
 	list-style-type: none;
 }
-
 .packages .grid li.right {
 	display: block;
 	padding: 50px;
@@ -250,19 +227,16 @@ header nav a{
 	float: right;
 	list-style-type: none;
 }
-
 .packages .grid li i {
 	color: #8c9eff;
 	text-align: center;
 }
-
 .packages .grid li h4 {
 	font-size: 30px;
 	margin: 25px 0;
 	padding-left: 50px;
 	
 }
-
 @media (max-width: 800px) {
 	.packages .grid li {
 		flex-basis: 100%;
@@ -270,10 +244,11 @@ header nav a{
 	}
 }
 
-
 /*Testimonials Section*/
 
-
+.testimonials{
+	padding-top: 70px;
+}
 .testimonials .quote {
 	font-size: 23px;
 	font-weight: 300;
@@ -300,13 +275,11 @@ header nav a{
 	border: 2px solid #3f51b5;
 	margin: 30px 600px;
 }
-
 @media (max-width: 800px) {
 	.testimonials .quote {
 		font-size: 18px;
 		margin: 15px 0;
 	}
-
 	.testimonials .author {
 		font-size: 20px;
 	} 
@@ -337,7 +310,6 @@ header nav a{
 	border: 2px solid #3f51b5;
 	margin: 40px 600px;
 }
-
 .contact form {
 	display: flex;
 	text-align: center;
@@ -346,7 +318,6 @@ header nav a{
 	flex-wrap: wrap;
 	width: 60%;
 }
-
 .contact form .btn {
 	padding: 20px 46px;
 	color: white;
@@ -358,7 +329,6 @@ header nav a{
 	text-decoration: none;
 	margin-right: -300px;
 }
-
 .contact form input{
 	padding: 15px;
 	margin-left: 350px;
@@ -367,7 +337,6 @@ header nav a{
 	color: #555;
 	flex: 1;
 }
-
 @media (max-width: 1000px) {
 	.contact form input {
 		flex-basis: 100%;
@@ -383,47 +352,39 @@ footer {
 	justify-content: space-around;
 	background-color: #607d8b;
 	color: #fff;
-	padding: 50px 0;
+	padding: 10px 0;
 }
-
 footer p a {
 	list-style-type: none;
 	text-decoration: none;
 	color: #fff;
 }
-
 footer ul li a{
 	color: #fff;
 	opacity: 0.6;
 }
-
 footer ul {
 	display: flex;
 	color: white;
 }
-
 footer ul li{
 	margin-left: 16px;
 	list-style-type: none;
 }
-
 footer p {
 	text-transform: uppercase;
 	font-size: 14px;
 	opacity: 0.6;
 	align-self: center;
 }
-
 @media (max-width: 1100px) {
 	footer {
 		flex-direction: column;
 	}
-
 	footer p {
 		text-align: center;
 		margin-bottom: 20px;
 	}
-
 	footer ul li {
 		margin: 0 8px;
 	}

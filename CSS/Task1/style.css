@@ -1,11 +1,13 @@
+*{
+	text-align: center;
+}
 /* header Style */
 header {
 	position: absolute;
-	width: 1300px;
+	width: 90%;
 	display:flex;
 	justify-content: space-between;
 	align-items: center;
-	padding: 0px 100px 0;
 	animation: 1s fadein 0.5s forwards;
 	opacity: 0;
 	color: black;
@@ -18,24 +20,39 @@ header {
 header h2 {
 	font-family: "Quicksand", sans-serif;
 	color: white;
+	text-align: center;
+	margin-left: 100px;
 }
 header nav {
 	display: flex;
 	margin-right: 40px;
+	text-align: center;
+	
 }
 header nav a{
-	margin: 0 25px;
-	color: #fff;
+	margin: 0 20px;
+	color: white;
     list-style-type: none;
 	text-decoration: none;
 }
-@media (max-width: 800px) {
+@media (max-width: 600px) {
 	header {
 		padding: 20px 50px;
 		flex-direction: column;
 	}
 	header h2 {
+		padding-right: 130px;
 		margin-bottom: 15px;
+	}
+	header nav {
+		display: flex;
+		text-align: center;
+	}
+	header nav a{
+		margin: 0 25px;
+		color: white;
+		list-style-type: none;
+		text-decoration: none;
 	}
 }
 
@@ -72,7 +89,6 @@ header nav a{
 	border-radius: 4px;
 	text-transform: uppercase;
 	font-weight: bold;
-	text-align: center;
 	background-color: #3f51b5;
 	opacity: 1;
 	text-decoration: none;
@@ -106,28 +122,26 @@ header nav a{
 /* destination section */
 
 .destinations{
-	margin: 70 50 50 30;
+	margin: 70 50 70 30;
+	padding-bottom: 750px;
+	height: 100%;
+	width: 100%;
 }
 .destinations .titles{
-	text-align: center;
-	padding: 0 200;
 	font: 32px "Open Sans",sans-serif;
 	margin: 50px 0 30px;
 	color: #555;
 }
 .destinations p{
-	text-align: center;
-	margin: 0 370px;
 	line-height: 30px;
 }
 .destinations hr{
-	text-align: center;
 	border: 2px solid #3f51b5;
 	margin: 30px 600px;
 }
 .destinations .grid li {
 	height: 350px;
-	padding: 20px;
+	display: flex;
 	list-style-type: none;
 	background-clip: content-box;
 	background-size: cover;
@@ -135,72 +149,86 @@ header nav a{
 }
 .destinations .grid li.small {
 	flex-basis: 30%;
-	padding: 0px;
-	height: 420px;
-	width: 420px;
+	height: 350px;
+	width: 100%;
+	max-width: 29%;
 	float: left;
 	padding: 10px;
 }
 .destinations .grid li.small1 {
 	flex-basis: 30%;
-	padding: 0px;
-	height: 420px;
-	width: 420px;
+	height: 350px;
+	width: 100%;
+	max-width: 29%;
 	float: right;
 	padding: 10px;
 }
 .destinations .grid li.large {
 	flex-basis: 70%;
 	float: right;
-	padding: 0px;
-	height: 420px;
-	width: 1000px;
+	height: 350px;
+	width: 100%;
+	max-width: 67%;
 	padding: 10px;
 }
 .destinations .grid li.large1 {
 	flex-basis: 70%;
 	float: left;
-	padding: 0px;
-	height: 420px;
-	width: 1000px;
+	height: 350px;
+	width: 100%;
+	max-width: 67%;
 	padding: 10px;
 }
-@media (max-width: 1100px) {
-	.destinations .grid li.small,
-	.destinations .grid li.large {
-		flex-basis: 50%;
-	}
-}
 @media (max-width: 800px) {
-	.destinations .grid li.small,
-	.destinations .grid li.large {
+	.destinations .grid li.small,.destinations .grid li.small1 {
 		flex-basis: 100%;
+		height: 180px;
+		width: 100%;
+		max-width: 100%;
+		float: inline-end;
+	}
+	.destinations .grid li.large,.destinations .grid li.large1 {
+		flex-basis: 100%;
+		height: 180px;
+		width: 100%;
+		max-width: 100%;
+		float: inline-end;
+	}
+	.destinations hr{
+		border: 2px solid #3f51b5;
+		margin: 30px 100px;
+	}
+	.destinations .grid li {
+		height: 180px;
+		display: flex;
+		list-style-type: none;
+		background-clip: content-box;
+		background-size: cover;
+		background-position: center;
+	}
+	.destinations{
+		padding-bottom: 850px;
 	}
 }
 
 /*Packages Section*/
 
 .packages{
-	margin: 1000px 0px 0px 0px;
-	padding-bottom: 650px;
+	padding-bottom: 630px;
 	background-color: #f5f5f5;	
 	padding-top: 30px;
 }
 .packages .titles1{
-	text-align: center;
 	margin-top: 50px;
 	padding: 50 50 10 50;
 	font: 32px "Open Sans";
 	color: black;
 }
 .packages p.para{
-	text-align: center;
-	margin: 0 390px;
 	line-height: 30px;
 	font: 16px "open Sans";
 }
 .packages hr{
-	text-align: center;
 	border: 2px solid #3f51b5;
 	margin: 30px 600px;
 }
@@ -208,7 +236,6 @@ header nav a{
 	display: block;
     padding: 50px;
     flex-basis: 50%;
-    text-align: center;
 	list-style-type: none;
 	font: 16px "Open Sans";
 	margin: 0px 30px;
@@ -216,14 +243,12 @@ header nav a{
 .packages .grid li.left {
 	display: block;
 	padding: 50px;
-	text-align: center;
 	float: left;
 	list-style-type: none;
 }
 .packages .grid li.right {
 	display: block;
 	padding: 50px;
-	text-align: center;
 	float: right;
 	list-style-type: none;
 }
@@ -235,19 +260,26 @@ header nav a{
 	font-size: 30px;
 	margin: 25px 0;
 	padding-left: 50px;
-	
 }
 @media (max-width: 800px) {
 	.packages .grid li {
 		flex-basis: 100%;
-		padding: 20px;
+		padding: 10px 20px;
+	}
+	.packages hr{
+		border: 2px solid #3f51b5;
+		margin: 20px 100px;
+	}
+	.packages{
+		margin-top: ;
+		padding-bottom: 1350px;
 	}
 }
 
 /*Testimonials Section*/
 
 .testimonials{
-	padding-top: 70px;
+	padding-top: 50px;
 }
 .testimonials .quote {
 	font-size: 23px;
@@ -283,6 +315,11 @@ header nav a{
 	.testimonials .author {
 		font-size: 20px;
 	} 
+	.testimonials hr{
+		text-align: center;
+		border: 2px solid #3f51b5;
+		margin: 30px 100px;
+	}
 }
 
 /*Contact Section*/
@@ -292,34 +329,30 @@ header nav a{
 	padding: 80px 0px;
 }
 .contact .title{
-	text-align: center;
 	padding: 50 50 0 50;
 	font: 32px "Open Sans";
 	color: #555;
 }
 .contact p{
-	text-align: center;
-	margin: 50px 350px;
+	margin: 50px 0px;
 	font: 21px;
 	font-family: sans-serif;
 	padding: 0px 20px;
 	line-height: 2;
 }
 .contact hr{
-	text-align: center;
 	border: 2px solid #3f51b5;
-	margin: 40px 600px;
+	margin: 40px 500px;
 }
 .contact form {
 	display: flex;
-	text-align: center;
 	align-items: center;
 	justify-content: center;
 	flex-wrap: wrap;
 	width: 60%;
 }
 .contact form .btn {
-	padding: 20px 46px;
+	padding: 18px 46px;
 	color: white;
 	border-radius: 4px;
 	text-transform: uppercase;
@@ -328,6 +361,7 @@ header nav a{
 	opacity: 1;
 	text-decoration: none;
 	margin-right: -300px;
+	list-style-type: none;
 }
 .contact form input{
 	padding: 15px;
@@ -336,11 +370,34 @@ header nav a{
 	font-size: 18px;
 	color: #555;
 	flex: 1;
+	list-style-type: none;
 }
-@media (max-width: 1000px) {
+@media (max-width: 800px) {
 	.contact form input {
 		flex-basis: 100%;
-		margin: 0 0 20px 0;
+		margin-left: 200px;
+		padding: 15px 75px;
+		font-size: 18px;
+		color: #555;
+		flex: 1;
+		list-style-type: none;
+		margin-bottom: 10px;
+	}
+	.contact hr{
+		border: 2px solid #3f51b5;
+		margin: 40px 200px;
+	}
+	.contact form .btn {
+		padding: 18px 46px;
+		color: white;
+		border-radius: 4px;
+		text-transform: uppercase;
+		font-weight: bold;
+		background-color: #3f51b5;
+		opacity: 1;
+		margin-right: -175px;
+		text-decoration: none;
+		list-style-type: none;
 	}
 }
 

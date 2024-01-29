@@ -104,7 +104,7 @@ header nav a{
 		margin: 0;
 	}
 }
-@media (max-width: 800px) {
+@media (max-width: 600px) {
 	.hero {
 		min-height: 600px;
 	}
@@ -134,62 +134,52 @@ header nav a{
 }
 .destinations p{
 	line-height: 30px;
+	padding: 0% 20%;
+	
 }
 .destinations hr{
 	border: 2px solid #3f51b5;
-	margin: 30px 600px;
+	margin: 30px 400px;
 }
 .destinations .grid li {
 	height: 350px;
+	width: 100%;
 	display: flex;
 	list-style-type: none;
 	background-clip: content-box;
 	background-size: cover;
 	background-position: center;
 }
-.destinations .grid li.small {
+.destinations .grid li.small{
 	flex-basis: 30%;
 	height: 350px;
-	width: 100%;
-	max-width: 29%;
+	width:29%;
+	max-width: 65%;
 	float: left;
 	padding: 10px;
 }
-.destinations .grid li.small1 {
-	flex-basis: 30%;
-	height: 350px;
-	width: 100%;
-	max-width: 29%;
-	float: right;
-	padding: 10px;
-}
-.destinations .grid li.large {
-	flex-basis: 70%;
-	float: right;
-	height: 350px;
-	width: 100%;
-	max-width: 67%;
-	padding: 10px;
-}
-.destinations .grid li.large1 {
+.destinations .grid li.large{
 	flex-basis: 70%;
 	float: left;
 	height: 350px;
-	width: 100%;
-	max-width: 67%;
+	width: 67%;
+	max-width: 65%;
 	padding: 10px;
 }
 @media (max-width: 800px) {
+	.destinations{
+		padding-bottom: 1000px;
+	}
 	.destinations .grid li.small,.destinations .grid li.small1 {
 		flex-basis: 100%;
-		height: 180px;
+		height: 230px;
 		width: 100%;
 		max-width: 100%;
 		float: inline-end;
 	}
 	.destinations .grid li.large,.destinations .grid li.large1 {
 		flex-basis: 100%;
-		height: 180px;
+		height: 230px;
 		width: 100%;
 		max-width: 100%;
 		float: inline-end;
@@ -206,15 +196,17 @@ header nav a{
 		background-size: cover;
 		background-position: center;
 	}
-	.destinations{
-		padding-bottom: 850px;
+	.destinations p{
+		line-height: 30px;
+		padding: 0px 50px;
 	}
 }
 
 /*Packages Section*/
 
 .packages{
-	padding-bottom: 630px;
+	width: 100%;
+	padding-bottom: 550px;
 	background-color: #f5f5f5;	
 	padding-top: 30px;
 }
@@ -235,20 +227,25 @@ header nav a{
 .packages .grid li {
 	display: block;
     padding: 50px;
+	margin: 100%;
     flex-basis: 50%;
 	list-style-type: none;
 	font: 16px "Open Sans";
-	margin: 0px 30px;
+	margin: 0px 0px;
 }
 .packages .grid li.left {
 	display: block;
-	padding: 50px;
+	flex-basis: auto;
+	max-width: 50%;
+	padding: 25px;
 	float: left;
 	list-style-type: none;
 }
 .packages .grid li.right {
 	display: block;
-	padding: 50px;
+	flex-basis: auto;
+	max-width: 50%;
+	padding: 25px;
 	float: right;
 	list-style-type: none;
 }
@@ -258,10 +255,19 @@ header nav a{
 }
 .packages .grid li h4 {
 	font-size: 30px;
-	margin: 25px 0;
-	padding-left: 50px;
+	margin: 15px 0;
+	/* padding-left: 0px; */
 }
-@media (max-width: 800px) {
+@media (max-width: 1000px) {
+	.packages{
+		padding-bottom: 0px;
+	}
+	.packages p{
+		padding: 0px 30px;
+	}
+	.packages .grid{
+		padding-left: 0px;
+	};
 	.packages .grid li {
 		flex-basis: 100%;
 		padding: 10px 20px;
@@ -270,8 +276,11 @@ header nav a{
 		border: 2px solid #3f51b5;
 		margin: 20px 100px;
 	}
-	.packages{
-		padding-bottom: 1350px;
+	.packages .grid li.left, .packages .grid li.right {
+		padding: 20px 0px;
+		width: 100%;
+		max-width: 100%;
+		float: none;
 	}
 }
 
@@ -306,7 +315,7 @@ header nav a{
 	border: 2px solid #3f51b5;
 	margin: 30px 600px;
 }
-@media (max-width: 800px) {
+@media (max-width: 1000px) {
 	.testimonials .quote {
 		font-size: 18px;
 		margin: 15px 0;
@@ -363,19 +372,19 @@ header nav a{
 	list-style-type: none;
 }
 .contact form input{
+	display: flex;
 	padding: 15px;
-	margin-left: 350px;
+	margin-left: 20%;
 	margin-right: 30px;
 	font-size: 18px;
 	color: #555;
 	flex: 1;
 	list-style-type: none;
 }
-@media (max-width: 800px) {
+@media (max-width: 1000px) {
 	.contact form input {
-		flex-basis: 100%;
 		margin-left: 200px;
-		padding: 15px 75px;
+		padding: 15px 20px;
 		font-size: 18px;
 		color: #555;
 		flex: 1;
@@ -384,7 +393,7 @@ header nav a{
 	}
 	.contact hr{
 		border: 2px solid #3f51b5;
-		margin: 40px 200px;
+		margin: 40px 150px;
 	}
 	.contact form .btn {
 		padding: 18px 46px;
@@ -419,6 +428,10 @@ footer ul li a{
 	color: #fff;
 	opacity: 0.6;
 }
+footer ul li a:hover{
+	color: #fff;
+	opacity: 1;
+}
 footer ul {
 	display: flex;
 	color: white;
@@ -427,10 +440,21 @@ footer ul li{
 	margin-left: 16px;
 	list-style-type: none;
 }
+footer .unsplash{
+	color: #fff;
+	opacity: 0.6;
+	
+}
+footer .unsplash:hover{
+	color: #fff;
+	opacity: 1;
+
+}
 footer p {
 	text-transform: uppercase;
 	font-size: 14px;
 	opacity: 0.6;
+	color: #fff;
 	align-self: center;
 }
 @media (max-width: 1100px) {

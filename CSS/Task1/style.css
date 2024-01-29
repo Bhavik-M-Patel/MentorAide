@@ -1,6 +1,9 @@
 *{
 	text-align: center;
 }
+body{
+	width: 100%;
+}
 /* header Style */
 header {
 	position: absolute;
@@ -35,14 +38,17 @@ header nav a{
     list-style-type: none;
 	text-decoration: none;
 }
-@media (max-width: 600px) {
+@media (max-width: 800px) {
 	header {
-		padding: 20px 50px;
+		padding: 20px 20px;
+		margin: 0px 20px;
 		flex-direction: column;
 	}
 	header h2 {
-		padding-right: 130px;
+		padding:10px 20px;
 		margin-bottom: 15px;
+		margin: 0px 20px 0px 0px;
+		text-align: center;
 	}
 	header nav {
 		display: flex;
@@ -228,7 +234,7 @@ header nav a{
 	display: block;
     padding: 50px;
 	margin: 100%;
-    flex-basis: 50%;
+    flex-basis: 40%;
 	list-style-type: none;
 	font: 16px "Open Sans";
 	margin: 0px 0px;
@@ -236,7 +242,7 @@ header nav a{
 .packages .grid li.left {
 	display: block;
 	flex-basis: auto;
-	max-width: 50%;
+	max-width: 45%;
 	padding: 25px;
 	float: left;
 	list-style-type: none;
@@ -244,7 +250,7 @@ header nav a{
 .packages .grid li.right {
 	display: block;
 	flex-basis: auto;
-	max-width: 50%;
+	max-width: 45%;
 	padding: 25px;
 	float: right;
 	list-style-type: none;
@@ -257,6 +263,9 @@ header nav a{
 	font-size: 30px;
 	margin: 15px 0;
 	/* padding-left: 0px; */
+}
+.packages .grid li p{
+	padding: 0px 10px;
 }
 @media (max-width: 1000px) {
 	.packages{
@@ -293,7 +302,7 @@ header nav a{
 	font-size: 23px;
 	font-weight: 300;
 	line-height: 1.5;
-	margin: 50px 380px 35px 380px;
+	margin: 50px 300px 35px 380px;
 	text-align: center;
 	font-family: sans-serif;
 }
@@ -374,14 +383,14 @@ header nav a{
 .contact form input{
 	display: flex;
 	padding: 15px;
-	margin-left: 20%;
+	margin-left: 25%;
 	margin-right: 30px;
 	font-size: 18px;
 	color: #555;
 	flex: 1;
 	list-style-type: none;
 }
-@media (max-width: 1000px) {
+@media (max-width: 800px) {
 	.contact form input {
 		margin-left: 200px;
 		padding: 15px 20px;

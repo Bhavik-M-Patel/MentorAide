@@ -1,0 +1,35 @@
+<html>
+    <head></head>
+    <body>
+        <h1>JavaScript Arrays</h1>
+        <p id="demo"></p>
+
+        <script>
+
+            // 1. Create an empty array called "fruits". 
+            var person ;
+            
+            // 2. Add the following fruits to the "fruits" array: "apple", "banana", "orange".
+            var person = {
+                name : "john",
+                age : "30", 
+                city : "New york"
+            };
+
+            // 3. Remove the "age" property from the "person" object. 
+            delete person.age;
+
+            // 4. Add a new property called "job" with the value "Engineer" to the "person" object.
+            person.job="Engineer";
+
+            // 5. Update the "city" property of the "person" object to "San Francisco". 
+            person.city = "San Francisco";
+
+            // 6. Print the final "person" object after performing the above operations. 
+            console.log(person);
+            
+            document.getElementById("demo").innerHTML = person.name +" - "+ person.age +" - "+ person.city +" - "+person.job;
+        </script>
+
+    </body>
+</html>

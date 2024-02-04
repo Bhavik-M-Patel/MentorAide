@@ -1,0 +1,29 @@
+<html>
+    <head>
+        <title>Task 6</title>
+        <h1>Answers :-</h1>
+        <script>
+            
+            // Assignment 2:
+            //  Write a JavaScript function that takes a positive integer as a parameter and calculates its factorial using a for loop. The factorial of a number N is the product of all positive integers less than or equal to N. 
+            
+                const number1 = parseInt(prompt("Enter Positive Number: "));
+                if (number1 < 0){
+                    console.log("Error! Negative factorial doesn't exists.")
+                }
+                else if(number1 == 0){
+                    console.log('The Factorial of 0 is 1.');
+                }
+                else{
+                    let fact=1;
+                    for(let i=1 ; i <= number1 ; i++){
+                        fact = fact * i;
+                    }
+                    console.log('The factorial of '+ number1 + ' is : ' +fact+ '.' );
+                }
+
+        </script>
+    </head>
+    <body>
+    </body>
+</html>

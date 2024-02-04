@@ -1,0 +1,36 @@
+<html>
+    <head>
+        <title>JavaScript Task-6</title>
+
+        <script>
+
+            // Assignment 8:
+            // Write a JavaScript function that takes a positive integer as a parameter and checks if it's a perfect number. A perfect number is a positive integer that is equal to the sum of its proper divisors, excluding itself. 
+
+                const number = parseInt(prompt("Enter the Number : "));
+                var flag,remainder,addition = 0,i;   
+				flag = number;
+				for(i = 0; i < number; i++)
+				{
+					remainder = number%i;
+					if(remainder==0)
+					{
+						addition += i;
+					}
+				}
+				if(addition == flag)
+				{
+					window.alert("-The inputed number is Perfect");
+				}
+				else
+				{
+					window.alert("-The inputed number is not Perfect");
+				}
+
+        </script>
+</head>
+<body>
+    <h1>JavaScript Assignments</h1>
+    <h2>Open console For Answer </h2>
+</body>
+</html>

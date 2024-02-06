@@ -51,21 +51,26 @@
             // Assignment 4:
             // Write a JavaScript function that takes a string as a parameter and determines whether it's a palindrome or not. A palindrome is a word, phrase, number, or other sequence of characters that reads the same forward and backward (ignoring spaces, punctuation, and capitalization). 
     
-                // const string = prompt('Enter a string or number: ');  
-                // const value = validatePalin(string);
-                // function validatePalin(str) 
+                // const str = prompt('Enter a string or number: ');  
+                // const value = validatePalin(str);
+                // function validatePalin() 
                 // {   
-                //     const len = string.length;  
+                //     const len = str.length;  
                 //     for (let i = 0; i < len / 2; i++) {  
-                //         if (string[i] !== string[len - 1 - i]) {  
-                //             console.log( 'It is not a palindrome');  
+                //         if (str[i] !== str[len - 1 - i]) {  
+                //             return false;  
                 //         }
                 //         else{
-                //             console.log( 'It is a palindrome');
+                //             return true;
                 //         }
                 //     }
                 // }     
-                // console.log(value);             
+                // if (value == false) {
+                //     console.log(str+" is not a palindrome number.");
+                // }
+                // else {
+                //     console.log(str+" is a palindrome number.");
+                // }             
     
             // Assignment 5:
             // Write a JavaScript function that takes a positive integer as a parameter and prints all the prime numbers less than or equal to that integer. A prime number is a natural number greater than 1 that is not a product of two smaller natural numbers. 
@@ -140,24 +145,24 @@
             // Write a JavaScript function that takes a positive integer as a parameter and checks if it's a perfect number. A perfect number is a positive integer that is equal to the sum of its proper divisors, excluding itself. 
 
                 // const number = parseInt(prompt("Enter the Number : "));
-                // var flag,remainder,addition = 0,i;   
-        				// flag = number;
-        				// for(i = 0; i < number; i++)
-        				// {
-        				// 	remainder = number%i;
-        				// 	if(remainder==0)
-        				// 	{
-        				// 		addition += i;
-        				// 	}
-        				// }
-        				// if(addition == flag)
-        				// {
-        				// 	window.alert("-The inputed number is Perfect");
-        				// }
-        				// else
-        				// {
-        				// 	window.alert("-The inputed number is not Perfect");
-        				// }
+                // let flag,remainder,addition = 0,i;   
+				// flag = number;
+				// for(i = 1; i < number; i++)
+				// {
+				// 	remainder = number%i;
+				// 	if(remainder==0)
+				// 	{
+				// 		addition += i;
+				// 	}
+				// }
+				// if(addition == flag)
+				// {
+				// 	alert("-The inputed number is Perfect");
+				// }
+				// else
+				// {
+				// 	alert("-The inputed number is not Perfect");
+				// }
 
             // Assignment 9:
             // Write a JavaScript function that takes a number as a parameter and prints the Fibonacci series up to that number. The Fibonacci series is a sequence of numbers in which each number is the sum of the two preceding ones. 
@@ -165,9 +170,9 @@
                 // var n1 = 0,  n2 = 1, next_num, i;  
                 // var num = parseInt (prompt (" Enter the limit for Fibonacci Series : "));  
                 // console.log( "Fibonacci Series: ");
-                // for ( i = 1; i <= num; i++)  
+                // for ( i = 1; i < num; i++)  
                 // {  
-                //     console.log (" " +  n1); 
+                //     document.write (" "+n1); 
                 //     next_num = n1 + n2;  
                 //     n1 = n2;
                 //     n2 = next_num;

@@ -1,27 +1,32 @@
 <html>
     <head>
-        <title>JavaScript Task-6</title>
+        <title>JavaScript Task-4</title>
 
         <script>
 
             // Assignment 4:
             // Write a JavaScript function that takes a string as a parameter and determines whether it's a palindrome or not. A palindrome is a word, phrase, number, or other sequence of characters that reads the same forward and backward (ignoring spaces, punctuation, and capitalization). 
     
-                const string = prompt('Enter a string or number: ');  
-                const value = validatePalin(string);
-                function validatePalin(str) 
+                const str = prompt('Enter a string or number: ');  
+                const value = validatePalin(str);
+                function validatePalin() 
                 {   
-                    const len = string.length;  
+                    const len = str.length;  
                     for (let i = 0; i < len / 2; i++) {  
-                        if (string[i] !== string[len - 1 - i]) {  
-                            console.log( 'It is not a palindrome');  
+                        if (str[i] !== str[len - 1 - i]) {  
+                            return false;  
                         }
                         else{
-                            console.log( 'It is a palindrome');
+                            return true;
                         }
                     }
                 }     
-                console.log(value);   
+                if (value == false) {
+                    console.log(str+" is not a palindrome number.");
+                }
+                else {
+                    console.log(str+" is a palindrome number.");
+                }
 
         </script>
 </head>

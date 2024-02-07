@@ -9,7 +9,7 @@
            let makeColorCode = '0123456789ABCDEF';
            let code = '#';
            for (let count = 0; count < 6; count++) {
-              code =code+ makeColorCode[Math.floor(Math.random() * 16)];
+              code = code + makeColorCode[Math.floor(Math.random() * 16)];
            }
            return code;
         }
@@ -19,13 +19,12 @@
     </script>
     <style>
         h1{
-            background-color:#FF0;
             text-align: center;
             padding:5% 0%;
         }
     </style>
 </head>
-<body>
-    <h1 id="chooseColor">Click anywhere on the page to change the background color!</h1>
+<body id="chooseColor">
+    <h1>Click anywhere on the page to change the background color!</h1>
 </body>
 </html>

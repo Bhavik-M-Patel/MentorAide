@@ -1,0 +1,51 @@
+<html>
+    <head>
+        <title>Array button replay assignmaent</title>
+        <style>
+            *{margin: 5px;}
+            button{
+                padding: 10px;
+                color: white;
+                background-color:teal;
+            }
+            #b2{margin-left: 50px;}
+            #textHere{
+                border: 1px solid black;
+                height: 100px; width: 200px;
+                background-color:blueviolet;color: white;
+                font-size: 24;
+                text-align: center;padding-top: 50px;
+            }
+        </style>
+    </head>
+    <script type="text/javascript"> 
+
+        const names = [ "Aarav", "Sanya", "Vikram", "Neha", "Rohan", "Priya", "Amit", "Meera", "Rajiv", "Ananya" ];
+        var Current = 0;
+        document.getElementById("textHere").innerHTML = names[Current];
+    
+        function Prev(){
+            if(Current == 0){
+                Current = names.length - 1;}
+            else{
+                Current--;}
+    
+            document.getElementById("textHere").innerHTML = names[Current];
+        }
+        function Next(){
+            if(Current == names.length - 1){
+                Current = 0}
+            else{
+                Current++;}
+    
+            document.getElementById("textHere").innerHTML = names[Current];
+        }
+    </script>
+    <body>
+        <div id="textHere">Aarav</div>
+        <div>
+            <button onclick="Prev();">Previous</button>
+            <button id="b2" onclick="Next();">Next</button>
+        </div>
+    </body>
+</html>

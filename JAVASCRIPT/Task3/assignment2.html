@@ -22,22 +22,23 @@
 
         const names = [ "Aarav", "Sanya", "Vikram", "Neha", "Rohan", "Priya", "Amit", "Meera", "Rajiv", "Ananya" ];
         var Current = 0;
-        document.getElementById("textHere").innerHTML = names[Current];
-    
+        
         function Prev(){
             if(Current == 0){
-                Current = names.length - 1;}
+                Current = names.length - 1;
+            }
             else{
-                Current--;}
-    
+                Current--;
+            }
             document.getElementById("textHere").innerHTML = names[Current];
         }
         function Next(){
             if(Current == names.length - 1){
-                Current = 0}
+                Current = 0;
+            }
             else{
-                Current++;}
-    
+                Current++;
+            }
             document.getElementById("textHere").innerHTML = names[Current];
         }
     </script>

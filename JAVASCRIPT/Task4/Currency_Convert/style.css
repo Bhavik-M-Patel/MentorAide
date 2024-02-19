@@ -1,0 +1,61 @@
+body {
+	background-color: aliceblue;
+	background-position: center;
+	background-size: cover;
+	background-attachment: fixed;
+	background-repeat: no-repeat;
+}
+.heading {
+	font-family:'Pacifico';
+	margin: 15px auto 0px;
+}
+hr {
+	border-top: 2px solid black;
+	width: 25%;
+	margin-bottom: 30px;
+}
+.main {
+	width: 50%;
+	margin: auto;
+	padding: 50px;
+	border-radius: 4px;
+	background-color:slategrey;
+	color: white;
+}
+label {
+	font-size: 20px;
+}
+.btn {
+	width: 150px;
+}
+#finalAmount {
+	font-family: 'Lobster';
+	display: none;
+	margin: 30px auto;
+}
+#finalAmount h2 {
+	font-size: 50px;
+}
+.finalValue {
+	font-family: 'Amiri';
+}
+@media (max-width: 700px) {
+	hr {
+		width: 60%;
+	}
+	.main {
+		width: 100%;
+	}
+}
+@media (max-width: 300px) {
+	.heading {
+		font-size: 60px;
+	}
+	hr {
+		width: 75%;
+	}
+	#finalAmount h2,
+	.finalValue {
+		font-size: 40px;
+	}
+}
